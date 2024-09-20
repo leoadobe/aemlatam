@@ -1,0 +1,1 @@
+aem up --log-level debug --log-file --
