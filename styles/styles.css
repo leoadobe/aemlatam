@@ -1,6 +1,6 @@
 @import url("original-styles.css");
-/* CUSTOM - Font change */
- 
+
+/* CUSTOM - Font change starts */
  @font-face {
     font-family: "Adobe Clean";
     src: local('adobe-clean-400.woff2');
@@ -21,9 +21,9 @@
         font-weight: 900;
         font-style: normal;  
         }    
-  
-/* CUSTOM - Colors change */
-
+/* CUSTOM - Font change ends */  
+     
+/* CUSTOM - Root Colors and Fontchange starts */
    :root {
     /* colors */
     --link-color: #035fe6;
@@ -37,56 +37,55 @@
     --text-color: #000;
     --text-color-white: #fff;
   
-       /* Colors */
-       --spectrum-blue: #1473E6;
-       --brand-color-purple: #8A8DF3;
-       --brand-color-dark-purple: #7473E4;
-       --brand-color-pink: #F1BCE7;
-       --brand-color-green-yellow: #EBF3A4;
-       --highlight-gradient: linear-gradient(75deg, #DB3278, #EE732F);
-   
-       /* those (background) colors were missing */
-       --color-black: #000;
-       --color-gray-100: rgb(10% 10% 10%);
-       --color-gray-200: rgb(20% 20% 20%);
-       --color-gray-500: rgb(50% 50% 50%);
-       --color-white: #fff;
-       --color-info-accent: inherit;
-       --color-info-accent-hover: inherit;
-       --color-info-accent-down:inherit;
-       --color-info-primary: inherit;
-       --color-info-primary-hover: inherit;
-       --color-info-primary-down: inherit;
-       --color-info-secondary: inherit;
-       --color-info-secondary-hover: inherit;
-       --color-info-secondary-down: inherit;
-       --color-info-accent-reverse: inherit;
-       --color-info-accent-reverse-down: inherit;
-   
-       /* Redesign colors */
-       --color-font-grey: #2C2C2C;
-       --color-light-grey-600: #686868;
-       --color-eyebrow-light-grey: #444;
-       --color-eyebrow-highlight: #6870EC;
-       --color-accent-blue: #6870EC;
-       --color-accent-highlight-yellow: #E3FA8C;
-       --color-accent-pink-bg: #F0B2F2;
-       --color-accent-pink-content: #88008D;
-       --color-accent-purple-bg: #474eb8;
-       --color-accent-purple-content: #E2E4FF;
-       --color-accent-lightgreen-bg: #E1FA82;
-       --color-accent-lightgreen-content: #3B5700;
-       --color-accent-yellow-bg: #F5E66B;
-       --color-accent-yellow-content: #7F6000;
-   
-       /* background colors */
-       --bg-color-lightgrey: #F8F8F8;
-       --bg-color-grey: #E8E8E8;
-       --bg-color-grey-2: #D6D6D6;
-       --overlay-curtain-bg-color: rgb(0 0 0 / 60%);
-       --overlay-curtain-bg-filter: blur(0.05em);
-       --code-bg-color: #F1F1F1;
-  
+    /* Colors */
+    --spectrum-blue: #1473E6;
+    --brand-color-purple: #8A8DF3;
+    --brand-color-dark-purple: #7473E4;
+    --brand-color-pink: #F1BCE7;
+    --brand-color-green-yellow: #EBF3A4;
+    --highlight-gradient: linear-gradient(75deg, #DB3278, #EE732F);
+
+    /* those (background) colors were missing */
+    --color-black: #000;
+    --color-gray-100: rgb(10% 10% 10%);
+    --color-gray-200: rgb(20% 20% 20%);
+    --color-gray-500: rgb(50% 50% 50%);
+    --color-white: #fff;
+    --color-info-accent: inherit;
+    --color-info-accent-hover: inherit;
+    --color-info-accent-down:inherit;
+    --color-info-primary: inherit;
+    --color-info-primary-hover: inherit;
+    --color-info-primary-down: inherit;
+    --color-info-secondary: inherit;
+    --color-info-secondary-hover: inherit;
+    --color-info-secondary-down: inherit;
+    --color-info-accent-reverse: inherit;
+    --color-info-accent-reverse-down: inherit;
+
+    /* Redesign colors */
+    --color-font-grey: #2C2C2C;
+    --color-light-grey-600: #686868;
+    --color-eyebrow-light-grey: #444;
+    --color-eyebrow-highlight: #6870EC;
+    --color-accent-blue: #6870EC;
+    --color-accent-highlight-yellow: #E3FA8C;
+    --color-accent-pink-bg: #F0B2F2;
+    --color-accent-pink-content: #88008D;
+    --color-accent-purple-bg: #474eb8;
+    --color-accent-purple-content: #E2E4FF;
+    --color-accent-lightgreen-bg: #E1FA82;
+    --color-accent-lightgreen-content: #3B5700;
+    --color-accent-yellow-bg: #F5E66B;
+    --color-accent-yellow-content: #7F6000;
+
+    /* background colors */
+    --bg-color-lightgrey: #F8F8F8;
+    --bg-color-grey: #E8E8E8;
+    --bg-color-grey-2: #D6D6D6;
+    --overlay-curtain-bg-color: rgb(0 0 0 / 60%);
+    --overlay-curtain-bg-filter: blur(0.05em);
+    --code-bg-color: #F1F1F1;
   
     /* fonts */
     --body-font-family: 'Adobe Clean', adobe-clean, 'Trebuchet MS', sans-serif;
@@ -112,11 +111,11 @@
     --heading-font-size-xs: 18px;
   
     /* nav height */
-    --nav-height: 64px;
-  
+    --nav-height: 64px;  
   }
+  /* CUSTOM - Root Colors and Fontchange ends */
   
-  /* CUSTOM - Button redesign animation starts */
+  /* CUSTOM - Button redesign animation starts */  
   
   /* primary button: blue bg */
    a.button:any-link,
@@ -236,17 +235,79 @@
       font-size: 18px;
       line-height: 24px;
       padding: 10px 26px;
-  }
-  }
-  
-    /* ---- CUSTOM - Button ends ---- */
-  
-    /* progressive section appearance */
-    main .section[data-section-status='loading'],
-    main .section[data-section-status='initialized'] {
-      display: none;
     }
-  
-    main .section.highlight {
-      background-color: var(--highlight-background-color);
+  }
+/* CUSTOM - Button redesign animation ends */  
+
+/* CUSTOM - Logo animation starts */  
+
+/* Set light gray border */
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+  }
+
+  /* Shape */
+  .square {
+    position: absolute;
+    width: 1000px;
+    height: 100vh;
+    background-color: transparent;
+    border-color: red;
+    border-style: solid;
+    border-width: 40px;
+    animation-duration: 1.5s;
+    /* animation-iteration-count: 3; */
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;  
+  }
+
+  /* Shape */
+  .logo {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    animation-duration: 1.45s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: initial;   
+    background-size: 100px 100px;
+    background-image: url("https://raw.githubusercontent.com/leoadobe/iaem/main/media/primary.png");
+  }
+
+  /* Grow */
+  .grow {
+    animation-name: grow;
+  }
+
+  @keyframes grow {
+    from {
+      width: 0px;
+      height: 0px;
     }
+
+    to {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  /* Shrink */
+  .shrink {
+    animation-name: shrink;
+  }
+
+  @keyframes shrink {
+    from {
+      transform: scale(3);
+    }
+
+    to {
+      transform: scale(0);
+    }
+  }
+/* CUSTOM - Logo animation ends */  
